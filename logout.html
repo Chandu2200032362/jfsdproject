@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Simulate session invalidation (this would actually need to happen server-side)
+        function logout() {
+            // Example of clearing client-side session storage (if used)
+            sessionStorage.clear();
+            
+            // Redirect to the login page
+            window.location.href = "login.html"; // Replace with your login page or home page
+        }
+
+        // Call the logout function immediately when this page loads
+        logout();
+    </script>
+</body>
+</html>

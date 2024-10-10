@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen's Rights - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4c3c4c;
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .logout-btn {
+            background-color: #5d4b5d;
+            border: none;
+            padding: 8px 15px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .domains {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .domain-box {
+            background-color: #d3b8a1;
+            width: 220px;
+            height: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .domain-box:hover {
+            transform: scale(1.05);
+        }
+        .domain-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .domain-box h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .domain-box p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Button that appears on hover */
+        .upload-btn {
+            display: none;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4c3c4c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .domain-box:hover .upload-btn {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4c3c4c;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>CITIZEN'S RIGHTS SINCE 2023</h1>
+        <button class="logout-btn">LOGOUT</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>CHOOSE DOMAIN</h2>
+        <p>Choose the domain and share the problem you are facing</p>
+        
+        <div class="domains">
+            <!-- Electricity Section with hover animation -->
+            <div class="domain-box">
+                <img src="images/elect.jpg" alt="Electricity Icon">
+                <h3>Electricity</h3>
+                <p>Problems related to electricity issues.</p>
+                <!-- Button that appears on hover -->
+                <button class="upload-btn">Upload the Problem</button>
+            </div>
+
+            <!-- Water Section -->
+            <div class="domain-box">
+                <img src="images/edu.jpg" alt="Water Icon">
+                <h3>Education</h3>
+                <p>Problems related to Education supply issues.</p>
+                <button class="upload-btn">Upload the Problem</button>
+            </div>
+
+            <!-- Road Section -->
+            <div class="domain-box">
+                <img src="images/road.jpg" alt="Road Icon">
+                <h3>Roads</h3>
+                <p>Issues with roads and infrastructure.</p>
+                <button class="upload-btn">Upload the Problem</button>
+            </div>
+
+            <!-- Health Section -->
+            <div class="domain-box">
+                <img src="images/health.jpg" alt="Health Icon">
+                <h3>Health</h3>
+                <p>Health and safety concerns.</p>
+                <button class="upload-btn">Upload the Problem</button>
+            </div>
+
+            <!-- Other Section -->
+            <div class="domain-box">
+                <h3>Other</h3>
+                <p>Other civic issues not listed above.</p>
+                <button class="upload-btn">Upload the Problem</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2023 Citizen's Rights. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/styles1.css" />
+</head>
+<body>
+    <img alt="Main" src="images/main.jpg" style="width: 100%; height: auto;">
+    
+    <!-- SignUp Form Section -->
+    <div class="signUpWindow">
+        <div class="signUpHeader">Sign Up</div>
+        <div class="signUpContent">
+            <form action="processSignUp.html" method="post">
+                <!-- First Name -->
+                <div style="display: block; padding-top: 20px;">First Name*</div>
+                <input type="text" id="T1" name="firstname" required>
+
+                <!-- Last Name -->
+                <div style="display: block; padding-top: 20px;">Last Name*</div>
+                <input type="text" id="T2" name="lastname" required>
+
+                <!-- Mobile Number -->
+                <div style="display: block; padding-top: 20px;">Mobile Number*</div>
+                <input type="text" id="T3" name="mobileno" required>
+
+                <!-- Email -->
+                <div style="display: block; padding-top: 20px;">Email*</div>
+                <input type="email" id="T4" name="email" required>
+
+                <!-- Username -->
+                <div style="display: block; padding-top: 20px;">Username*</div>
+                <input type="text" id="T5" name="username" required>
+
+                <!-- Password -->
+                <div style="display: block; padding-top: 20px;">Password*</div>
+                <input type="password" id="T6" name="password" required>
+
+                <!-- Register Button -->
+                <button class="signUpButton" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
